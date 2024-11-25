@@ -10,7 +10,7 @@
   "EditorReferences": null,
   "IsWhitelistDisabled": false,
   "Metadata": {
-    "MaxPlayers": 1,
+    "MaxPlayers": 4,
     "MinPlayers": 1,
     "TickRate": 50,
     "GameNetworkType": "Multiplayer",
@@ -24,6 +24,11 @@
     "CsProjName": "",
     "StartupScene": "untitled.scene",
     "LaunchMode": "Normal",
-    "DedicatedServerStartupScene": "untitled.scene"
+    "DedicatedServerStartupScene": "untitled.scene",
+    "ControlModes": {
+      "Keyboard": false,
+      "VR": false,
+      "Gamepad": false
+    }
   }
 }

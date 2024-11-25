@@ -33,7 +33,8 @@ public class Player : Component
 
 	protected override void OnFixedUpdate()
 	{
-		Scene.Camera.FieldOfView = 110;
+		if ( IsProxy )
+			return;
 
 		doDeath();
 
@@ -71,8 +72,8 @@ public class Player : Component
 			spring.Enabled = false;
 			lineRenderer.Points.Clear();
 		}
+		
 		grapplePhysiscs.WorldRotation = controller.GameObject.WorldRotation;
-
 		if ( grappled )
 		{
 			controller.GameObject.WorldPosition = grapplePhysiscs.WorldPosition;
