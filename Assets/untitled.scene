@@ -73,144 +73,6 @@
       ]
     },
     {
-      "__guid": "6efbd53f-4820-4a5f-b854-2118e638d8b4",
-      "Flags": 0,
-      "Name": "Cube",
-      "Position": "448,0,288",
-      "Scale": "1.3,1.3,1.3",
-      "Tags": "grapple",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "ea724b92-ae0e-42b9-949d-139e77fd8aeb",
-          "BodyGroups": 18446744073709551615,
-          "CreateAttachments": false,
-          "Model": "models/dev/box.vmdl",
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": true,
-            "AfterUILayer": false
-          },
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "74d2dfd2-a7fc-4aaf-a94d-53b6d1e28f25",
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "64,63,64",
-          "Static": true,
-          "SurfaceVelocity": "0,0,0"
-        },
-        {
-          "__type": "Sandbox.SpringJoint",
-          "__guid": "3380f46f-acf8-412e-8784-790d05052fd0",
-          "Attachment": "Auto",
-          "BreakForce": 9999999,
-          "BreakTorque": 9999999,
-          "Damping": 0,
-          "EnableCollision": false,
-          "Frequency": 1,
-          "LocalFrame1": {
-            "UniformScale": 1,
-            "IsValid": true,
-            "ForwardRay": {
-              "Position": "0,0,0",
-              "Forward": "1,0,0"
-            },
-            "Position": "0,0,0",
-            "Scale": "1,1,1",
-            "Rotation": "0,0,0,1"
-          },
-          "LocalFrame2": {
-            "UniformScale": 1,
-            "IsValid": true,
-            "ForwardRay": {
-              "Position": "0,0,0",
-              "Forward": "1,0,0"
-            },
-            "Position": "0,0,0",
-            "Scale": "1,1,1",
-            "Rotation": "0,0,0,1"
-          },
-          "MaxLength": 100,
-          "MinLength": 0
-        }
-      ]
-    },
-    {
-      "__guid": "3a0c99fa-b41c-46b2-9e7b-57cc81b933fd",
-      "Flags": 0,
-      "Name": "Cube (1)",
-      "Position": "608,-512,-192",
-      "Scale": "1.3,1.3,1.3",
-      "Tags": "grapple",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "b786acd8-2eb2-4634-959b-1d86a5cac999",
-          "BodyGroups": 18446744073709551615,
-          "CreateAttachments": false,
-          "Model": "models/dev/box.vmdl",
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": true,
-            "AfterUILayer": false
-          },
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "95bdaeb3-2e61-4872-998d-e31b70654e24",
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "64,63,64",
-          "Static": true,
-          "SurfaceVelocity": "0,0,0"
-        },
-        {
-          "__type": "Sandbox.SpringJoint",
-          "__guid": "35089349-e456-4301-b2e9-0dd0339171cc",
-          "Attachment": "Auto",
-          "BreakForce": 9999999,
-          "BreakTorque": 9999999,
-          "Damping": 0,
-          "EnableCollision": false,
-          "Frequency": 1,
-          "LocalFrame1": {
-            "UniformScale": 1,
-            "IsValid": true,
-            "ForwardRay": {
-              "Position": "0,0,0",
-              "Forward": "1,0,0"
-            },
-            "Position": "0,0,0",
-            "Scale": "1,1,1",
-            "Rotation": "0,0,0,1"
-          },
-          "LocalFrame2": {
-            "UniformScale": 1,
-            "IsValid": true,
-            "ForwardRay": {
-              "Position": "0,0,0",
-              "Forward": "1,0,0"
-            },
-            "Position": "0,0,0",
-            "Scale": "1,1,1",
-            "Rotation": "0,0,0,1"
-          },
-          "MaxLength": 100,
-          "MinLength": 0
-        }
-      ]
-    },
-    {
       "__guid": "38132b44-c89e-4250-95aa-56931b2d52ed",
       "Flags": 0,
       "Name": "Map",
@@ -229,6 +91,617 @@
         }
       ],
       "Children": []
+    },
+    {
+      "__guid": "576abf91-18e4-44dd-8332-a8aa0415a13e",
+      "Flags": 0,
+      "Name": "Level 1",
+      "Position": "448,0,288",
+      "Scale": "1.3,1.3,1.3",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "6efbd53f-4820-4a5f-b854-2118e638d8b4",
+          "Flags": 0,
+          "Name": "Grapple Point 1",
+          "Tags": "grapple",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ea724b92-ae0e-42b9-949d-139e77fd8aeb",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": true,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "74d2dfd2-a7fc-4aaf-a94d-53b6d1e28f25",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "64,63,64",
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.SpringJoint",
+              "__guid": "3380f46f-acf8-412e-8784-790d05052fd0",
+              "Attachment": "Auto",
+              "BreakForce": 9999999,
+              "BreakTorque": 9999999,
+              "Damping": 0,
+              "EnableCollision": false,
+              "Frequency": 1,
+              "LocalFrame1": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "LocalFrame2": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "MaxLength": 100,
+              "MinLength": 0
+            }
+          ]
+        },
+        {
+          "__guid": "3a0c99fa-b41c-46b2-9e7b-57cc81b933fd",
+          "Flags": 0,
+          "Name": "Grapple Point 2",
+          "Position": "123.0769,-393.8462,-369.2308",
+          "Tags": "grapple",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "b786acd8-2eb2-4634-959b-1d86a5cac999",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": true,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "95bdaeb3-2e61-4872-998d-e31b70654e24",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "64,63,64",
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.SpringJoint",
+              "__guid": "35089349-e456-4301-b2e9-0dd0339171cc",
+              "Attachment": "Auto",
+              "BreakForce": 9999999,
+              "BreakTorque": 9999999,
+              "Damping": 0,
+              "EnableCollision": false,
+              "Frequency": 1,
+              "LocalFrame1": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "LocalFrame2": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "MaxLength": 100,
+              "MinLength": 0
+            }
+          ]
+        },
+        {
+          "__guid": "21778a04-8902-4de7-9016-62352f3f3ee5",
+          "Flags": 0,
+          "Name": "Grapple Point 3",
+          "Position": "-590.7692,-492.3077,-590.7692",
+          "Tags": "grapple",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "22385562-dfd2-4a2a-956e-e4a8207025f7",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": true,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "5a09cf48-d56f-49b0-9c89-f87c7491e099",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "64,63,64",
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.SpringJoint",
+              "__guid": "35a9ead3-71b9-4e83-9975-32228ec9db85",
+              "Attachment": "Auto",
+              "BreakForce": 9999999,
+              "BreakTorque": 9999999,
+              "Damping": 0,
+              "EnableCollision": false,
+              "Frequency": 1,
+              "LocalFrame1": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "LocalFrame2": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "MaxLength": 100,
+              "MinLength": 0
+            }
+          ]
+        },
+        {
+          "__guid": "4a75bc32-2106-4fe4-a39a-caa13e48bc42",
+          "Flags": 0,
+          "Name": "Grapple Point 4",
+          "Position": "-1329.231,-492.3077,-590.7692",
+          "Tags": "grapple",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "2b305e50-3c98-425c-922a-2500df958dca",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": true,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "f083b654-4d9c-47fb-a15d-8514372cda17",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "64,63,64",
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.SpringJoint",
+              "__guid": "9b291a3d-9a05-4af5-8534-945fa64393a0",
+              "Attachment": "Auto",
+              "BreakForce": 9999999,
+              "BreakTorque": 9999999,
+              "Damping": 0,
+              "EnableCollision": false,
+              "Frequency": 1,
+              "LocalFrame1": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "LocalFrame2": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "MaxLength": 100,
+              "MinLength": 0
+            }
+          ]
+        },
+        {
+          "__guid": "7534b13a-dffd-46f9-9e0a-b1e8feb815ef",
+          "Flags": 0,
+          "Name": "Checkpoint 1",
+          "Position": "-2436.923,-763.077,-566.1539",
+          "Scale": "0.3846154,0.3846154,0.5384616",
+          "Tags": "trigger",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d8cb721b-e9ce-4772-aaa9-78df0d750546",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "Model": "models/cylinder.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": true,
+                "AfterUILayer": false
+              },
+              "RenderType": "Off",
+              "Tint": "0,1,0.18333,0.68"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "5b5959d4-c216-431d-9bff-6532160fa3d8",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "200,200,200",
+              "Static": false,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Checkpoint",
+              "__guid": "bbaa6a31-5519-4871-92a5-17c1b85f3583"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "44eb4fb6-e788-4e0b-8898-9d949ef422bb",
+      "Flags": 0,
+      "Name": "Level 2",
+      "Position": "-2240,-1472,-192",
+      "Scale": "1.3,1.3,1.3",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "25c2d70f-8588-4fcb-985b-7cf260cb8b14",
+          "Flags": 0,
+          "Name": "Grapple Point 5",
+          "Tags": "grapple",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "1434ba08-94cd-478c-958b-fd9ca838fdfb",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": true,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "dd545d88-c8bf-431f-9004-c5a54867b28e",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "64,63,64",
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.SpringJoint",
+              "__guid": "955468bc-dafe-4934-9a30-a6d1d4845920",
+              "Attachment": "Auto",
+              "BreakForce": 9999999,
+              "BreakTorque": 9999999,
+              "Damping": 0,
+              "EnableCollision": false,
+              "Frequency": 1,
+              "LocalFrame1": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "LocalFrame2": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "MaxLength": 100,
+              "MinLength": 0
+            }
+          ]
+        },
+        {
+          "__guid": "707a6f7c-5e95-47c6-9d40-4cc9d744f8d1",
+          "Flags": 0,
+          "Name": "Grapple Point 6",
+          "Position": "-344.6154,-467.6923,24.61539",
+          "Tags": "grapple",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "5d1f4570-53d7-486d-96a8-f4dc0302ef71",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": true,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "676c2c04-99ba-4cb9-a932-c20e188e2e86",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "64,63,64",
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.SpringJoint",
+              "__guid": "33a08f31-a2d5-4a17-877f-cbe2382c2da3",
+              "Attachment": "Auto",
+              "BreakForce": 9999999,
+              "BreakTorque": 9999999,
+              "Damping": 0,
+              "EnableCollision": false,
+              "Frequency": 1,
+              "LocalFrame1": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "LocalFrame2": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "MaxLength": 100,
+              "MinLength": 0
+            }
+          ]
+        },
+        {
+          "__guid": "0c540d2f-f3ce-420a-a05a-0a537362cfb5",
+          "Flags": 0,
+          "Name": "Grapple Point 7",
+          "Position": "-344.6154,-984.6154,-24.61539",
+          "Tags": "grapple",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0d90f833-c181-4239-be4e-b7965ad2460f",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": true,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "f8c79980-a975-4f34-87e3-501b5517ca08",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "64,63,64",
+              "Static": true,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Sandbox.SpringJoint",
+              "__guid": "7a76ebe0-30d4-4b39-b02e-d1e7267f4937",
+              "Attachment": "Auto",
+              "BreakForce": 9999999,
+              "BreakTorque": 9999999,
+              "Damping": 0,
+              "EnableCollision": false,
+              "Frequency": 1,
+              "LocalFrame1": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "LocalFrame2": {
+                "UniformScale": 1,
+                "IsValid": true,
+                "ForwardRay": {
+                  "Position": "0,0,0",
+                  "Forward": "1,0,0"
+                },
+                "Position": "0,0,0",
+                "Scale": "1,1,1",
+                "Rotation": "0,0,0,1"
+              },
+              "MaxLength": 100,
+              "MinLength": 0
+            }
+          ]
+        },
+        {
+          "__guid": "b07273f8-4bd7-42ec-8623-d3733b32bd95",
+          "Flags": 0,
+          "Name": "Dash Crystal 1",
+          "Position": "24.61539,-467.6923,-196.9231",
+          "Scale": "0.3076923,0.3076923,0.3076923",
+          "Tags": "trigger",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "436c2ea7-0a35-406d-97d8-c0154a3323b2",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "Model": "models/icosphere_1.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "0,0.15,1,0.5"
+            },
+            {
+              "__type": "Sandbox.SphereCollider",
+              "__guid": "d7593e83-2b6d-4eb8-a79c-2906da942e75",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Radius": 200,
+              "Static": false,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "DashCrystal",
+              "__guid": "59cd1f97-1b84-4ac3-a9aa-0af89703680a"
+            }
+          ]
+        },
+        {
+          "__guid": "2e0a14be-3a4a-4b8b-bbe6-dcbbba0a27db",
+          "Flags": 0,
+          "Name": "Checkpoint 2",
+          "Position": "-344.6154,-1255.385,-418.4615",
+          "Scale": "0.3846154,0.3846154,0.5384616",
+          "Tags": "trigger",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "a388e898-26c7-447d-aa57-295aee2ab291",
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "Model": "models/cylinder.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": true,
+                "AfterUILayer": false
+              },
+              "RenderType": "Off",
+              "Tint": "0,1,0.18333,0.68"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "fcca9b6b-77a2-4dc7-bd3f-2ae391017d25",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "200,200,200",
+              "Static": false,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Checkpoint",
+              "__guid": "b73c786d-de92-445a-89e7-7046eed09473"
+            }
+          ]
+        }
+      ]
     },
     {
       "__guid": "c6c8e618-9ba0-4a21-bf09-15c23e825acf",
@@ -276,7 +749,7 @@
           "RunSpeed": 320,
           "ShowColliderComponents": false,
           "ShowRigidbodyComponent": true,
-          "ThirdPerson": true,
+          "ThirdPerson": false,
           "ToggleCameraModeButton": "view",
           "UseAnimatorControls": true,
           "UseButton": "use",
@@ -306,17 +779,8 @@
           "StartAsleep": false
         },
         {
-          "__type": "MoveModeWalk",
-          "__guid": "719a211a-d91a-437d-bdb0-5b9ac7c7c914",
-          "GroundAngle": 45,
-          "Priority": 0,
-          "StepDownHeight": 18,
-          "StepUpHeight": 18
-        },
-        {
           "__type": "Sandbox.Movement.MoveModeWalk",
           "__guid": "766d4302-c209-4949-94e5-6c18fcf8107f",
-          "__enabled": false,
           "GroundAngle": 45,
           "Priority": 0,
           "StepDownHeight": 18,
@@ -363,15 +827,15 @@
             "blend": "Linear",
             "color": [
               {
-                "t": 0.5,
-                "c": "0,1,1,1"
+                "t": 0.44444445,
+                "c": "0,1,1,0.16"
               }
             ],
             "alpha": []
           },
           "EndCap": "None",
           "Face": "Camera",
-          "Opaque": true,
+          "Opaque": false,
           "Points": [],
           "RenderOptions": {
             "GameLayer": true,
@@ -422,6 +886,7 @@
             "go": "c6c8e618-9ba0-4a21-bf09-15c23e825acf",
             "component_type": "LineRenderer"
           },
+          "maxDashes": 1,
           "spring": {
             "_type": "component",
             "component_id": "f6ba44d0-bee5-48d6-99d5-3abc97228ee0",
